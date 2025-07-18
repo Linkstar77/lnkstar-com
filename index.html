@@ -16,6 +16,7 @@
       margin: 0;
       padding: 0;
       text-align: center;
+      line-height: 1.6;
     }
     header {
       display: flex;
@@ -37,7 +38,15 @@
       margin: 0;
     }
     main {
-      padding: 40px;
+      padding: 20px;
+    }
+    .about {
+      max-width: 600px;
+      margin: 20px auto;
+      text-align: left;
+      background: #1a1a1a;
+      padding: 15px;
+      border-radius: 8px;
     }
     .buttons a {
       display: inline-block;
@@ -53,19 +62,37 @@
     .buttons a:hover {
       background: #00e68a;
     }
+    @media (max-width: 600px) {
+      header {
+        flex-direction: column;
+      }
+      header img {
+        margin: 0 0 10px;
+      }
+      .buttons a {
+        display: block;
+        margin: 10px auto;
+        width: 80%;
+      }
+    }
   </style>
 </head>
 
 <body>
   <header>
-    <!-- Embedded neon-green headphone logo -->
+    <!-- Embedded logo + name -->
     <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICA8Y2lyY2xlIGN4PSIzMCIgY3k9IjMwIiByPSIzMCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMDBmZjY5IiBzdHJva2Utd2lkdGg9IjUiLz4KICA8cGF0aCBkPSJNMTUgMzAgYTIwIDIwIDAgMCAxIDQwIDAgTjE1IDMwIiBzdHJva2U9IiMwMGZmNjkiIHN0cm9rZS13aWR0aD0iNSIvPgo8L3N2Zz4=" alt="Lynkstar logo" />
-
     <h1>Lynkstar</h1>
   </header>
 
   <main>
     <p>I'm a musician building greatness online.</p>
+
+    <div class="about">
+      <h2>About Me</h2>
+      <p>Hey, I’m Lynkstar — a creative technologist and rapper inspired by the energy of modern hip‑hop. I blend futuristic sounds with soulful lyrics, all while sharing my journey here online. I’m working on recording my first tracks and can’t wait to share them with you.</p>
+    </div>
+
     <div class="buttons">
       <a href="https://www.instagram.com/goodbless335/" target="_blank">Instagram</a>
       <a href="https://github.com/Linkstar77" target="_blank">GitHub</a>
